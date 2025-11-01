@@ -1,0 +1,17 @@
+
+services:
+  db:
+    image: postgres:15
+    container_name: testdb_container
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: test_u
+      POSTGRES_PASSWORD: test_p
+      POSTGRES_DB: testdb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./bdd.sql:/docker-entrypoint-initdb.d/bdd.sql
+
+volumes:
+  pgdata:
