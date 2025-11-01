@@ -1,0 +1,4 @@
+REPOSITORY           TAG       IMAGE ID       CREATED          SIZE
+first_go_container   latest    4d0330dda113   37 minutes ago   1.3GB
+REPOSITORY               TAG       IMAGE ID       CREATED         SIZE
+optimized_go_container   latest    7083e70883dd   6 minutes ago   24.3MB

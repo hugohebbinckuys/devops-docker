@@ -1,7 +1,7 @@
 FROM node:20
 
 RUN adduser --disabled-password non_root
-#-D pour pas de mdp p/def
+#-disabled-pass pour pas de mdp p/def
 
 WORKDIR /app 
 
